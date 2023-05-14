@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <stack>
 #include <string>
 
@@ -23,7 +23,7 @@ public:
 	ArthmeticTree() {
 		root = nullptr;
 	}
-	//строим дерево с помощью постфиксной записи
+	//СЃС‚СЂРѕРёРј РґРµСЂРµРІРѕ СЃ РїРѕРјРѕС‰СЊСЋ РїРѕСЃС‚С„РёРєСЃРЅРѕР№ Р·Р°РїРёСЃРё
 	void creating_tree(string& postfix) {
 		stack<Node*> s;
 		for (char& element : postfix)
@@ -39,20 +39,20 @@ public:
 					s.pop();
 				}
 				else
-					throw logic_error("stack полон");
+					throw logic_error("stack РїРѕР»РѕРЅ");
 				if (!s.empty()) {
 				node->left = s.top();
 				s.pop();
 				}
 				else
-					throw logic_error("stack полон");
+					throw logic_error("stack РїРѕР»РѕРЅ");
 				s.push(node);
 			}
 		}
 		root = s.top();
 		s.pop();
 	}
-	//расчет
+	//СЂР°СЃС‡РµС‚
 	int calculation() {
 		return rec_calculation(root);
 	}
@@ -88,10 +88,10 @@ public:
 string postfixToInfix(string postfix) {
 	stack<string> s;
 	for (const char& ch : postfix) {
-		if (isdigit(ch)) {//Если символ является числом
+		if (isdigit(ch)) {//Р•СЃР»Рё СЃРёРјРІРѕР» СЏРІР»СЏРµС‚СЃСЏ С‡РёСЃР»РѕРј
 			s.push(string(1, ch));
 		}
-		else if (ch == '+' || ch == '-' || ch == '*' || ch == '/') {//Иначе, если символ оператора +, -, * или /
+		else if (ch == '+' || ch == '-' || ch == '*' || ch == '/') {//РРЅР°С‡Рµ, РµСЃР»Рё СЃРёРјРІРѕР» РѕРїРµСЂР°С‚РѕСЂР° +, -, * РёР»Рё /
 			string operand2 = s.top();
 			s.pop();
 			string operand1 = s.top();

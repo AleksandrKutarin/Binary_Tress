@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <string>
 #include"dict_header.h"
 
@@ -11,29 +11,29 @@ int main()
 	hash_table<string> ht(15);
 	
 	vector<string> v1{
-		"Самолёт",
-		"Ложка",
-		"Кастрюля",
-		"Шаурма",
-		"Пельмень"	
+		"РЎР°РјРѕР»С‘С‚",
+		"Р›РѕР¶РєР°",
+		"РљР°СЃС‚СЂСЋР»СЏ",
+		"РЁР°СѓСЂРјР°",
+		"РџРµР»СЊРјРµРЅСЊ"	
 	};
 
 	vector<string> v2{
-		"Стол",
-		"Ложка",
-		"Сковородка",
-		"Шаурма",
-		"Кола"
+		"РЎС‚РѕР»",
+		"Р›РѕР¶РєР°",
+		"РЎРєРѕРІРѕСЂРѕРґРєР°",
+		"РЁР°СѓСЂРјР°",
+		"РљРѕР»Р°"
 	};
 
 	for (auto elem : v1) {
-		ht.insert(elem, "таблица номер 1");
+		ht.insert(elem, "С‚Р°Р±Р»РёС†Р° РЅРѕРјРµСЂ 1");
 	}
 	ht.print();
 	cout << "====================" << endl;
 	for (auto elem : v2) {
 		if (ht.find(elem) == -1) {
-			ht.insert(elem, "таблица номер 2");
+			ht.insert(elem, "С‚Р°Р±Р»РёС†Р° РЅРѕРјРµСЂ 2");
 		}
 	}
 	ht.print();
