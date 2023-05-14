@@ -103,3 +103,36 @@ string postfixToInfix(string postfix) {
 	}
 	return s.top();
 }
+string infixToPostfix(string infix) {
+	stack<char> s;
+	string postfix = "";
+	for (const char& ch : infix) {
+		if (isdigit(ch)) {//Если символ является числом
+			postfix += ch;
+		}
+		else if (ch == '+' || ch == '-' || ch == '*' || ch == '/') {//Иначе, если символ оператора +, -, * или /
+			while (!s.empty() && s.top() != '(' && (s.top() == '*' || s.top() == '/' || ch == '+' || ch == '-')) {
+				postfix += s.top();
+				s.pop();
+			}
+			s.push(ch);
+		}
+		else if (ch == '(') {
+			s.push(ch);
+		}
+		else if (ch == ')') {
+			while (!s.empty() && s.top() != '(') {
+				postfix += s.top();
+				s.pop();
+			}
+			if (!s.empty() && s.top() == '(') {
+				s.pop();
+			}
+		}
+	}
+	while (!s.empty()) {
+		postfix += s.top();
+		s.pop();
+	}
+	return postfix;
+}

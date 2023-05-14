@@ -3,9 +3,10 @@
 int main() {
     setlocale(0, "rus");
     ArthmeticTree tree;
-    string postfix = "95173*+-+";
+    string infix = "((9+5)*2-(7+3))";
+    string postfix = infixToPostfix(infix);
 
-    string infix = postfixToInfix(postfix);
+    cout << "Постфиксное выражение: " << postfix << endl;
     cout << "Инфиксное выражение: " << infix << endl;
 
     tree.creating_tree(postfix);
