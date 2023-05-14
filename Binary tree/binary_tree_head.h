@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 using namespace std;
 
@@ -17,13 +17,13 @@ public:
 
 class BinaryTree {
 public:
-    Node* root; // корень
+    Node* root; // РєРѕСЂРµРЅСЊ
 
     BinaryTree() {
         this->root = nullptr;
     }
 
-    void insert(int value) { // метод вставки в дерево
+    void insert(int value) { // РјРµС‚РѕРґ РІСЃС‚Р°РІРєРё РІ РґРµСЂРµРІРѕ
         Node* new_node = new Node(value);
         if (this->root == nullptr) {
             this->root = new_node;
@@ -52,11 +52,11 @@ public:
             }
         }
     }
-    void remove(int value) { // метод который принимает указатель на узел и значение которое удаляется
+    void remove(int value) { // РјРµС‚РѕРґ РєРѕС‚РѕСЂС‹Р№ РїСЂРёРЅРёРјР°РµС‚ СѓРєР°Р·Р°С‚РµР»СЊ РЅР° СѓР·РµР» Рё Р·РЅР°С‡РµРЅРёРµ РєРѕС‚РѕСЂРѕРµ СѓРґР°Р»СЏРµС‚СЃСЏ
         root = removeNode(root, value);
     }
 
-    Node* removeNode(Node* node, int value) { // метод удаление узла
+    Node* removeNode(Node* node, int value) { // РјРµС‚РѕРґ СѓРґР°Р»РµРЅРёРµ СѓР·Р»Р°
         if (node == nullptr) {
             return nullptr;
         }
@@ -101,14 +101,14 @@ public:
         return nullptr;
     }
 
-    void print_in_order(Node* node) {   // метод печати: левый узел - текущий узел - правый узел
+    void print_in_order(Node* node) {   // РјРµС‚РѕРґ РїРµС‡Р°С‚Рё: Р»РµРІС‹Р№ СѓР·РµР» - С‚РµРєСѓС‰РёР№ СѓР·РµР» - РїСЂР°РІС‹Р№ СѓР·РµР»
         if (node != nullptr) {
             print_in_order(node->left);
             cout << node->value << " ";
             print_in_order(node->right);
         }
     }
-    void print_pre_order(Node* node) {  // метод печати: текущий узел - левый узел - правый узел
+    void print_pre_order(Node* node) {  // РјРµС‚РѕРґ РїРµС‡Р°С‚Рё: С‚РµРєСѓС‰РёР№ СѓР·РµР» - Р»РµРІС‹Р№ СѓР·РµР» - РїСЂР°РІС‹Р№ СѓР·РµР»
         if (node != nullptr) {
             cout << node->value << " ";
             print_pre_order(node->left);
@@ -116,7 +116,7 @@ public:
         }
     }
 
-    void print_post_order(Node* node) { // метод печати: левый узел - правый узел - текущий узел
+    void print_post_order(Node* node) { // РјРµС‚РѕРґ РїРµС‡Р°С‚Рё: Р»РµРІС‹Р№ СѓР·РµР» - РїСЂР°РІС‹Р№ СѓР·РµР» - С‚РµРєСѓС‰РёР№ СѓР·РµР»
         if (node != nullptr) {
             print_post_order(node->left);
             print_post_order(node->right);

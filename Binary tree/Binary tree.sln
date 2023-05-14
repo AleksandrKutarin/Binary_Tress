@@ -5,6 +5,10 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Binary tree", "Binary tree.vcxproj", "{7EE13F51-A234-4EAA-B78C-7B6167FBC0B8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arithmetic Expression Tree", "..\Arithmetic Expression Tree\Arithmetic Expression Tree.vcxproj", "{1DB769AB-D68D-4CBF-960B-71F51D8B61CA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dictionary", "..\dictionary\dictionary.vcxproj", "{E41758DD-10A6-483C-905C-244EB145BA21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +25,22 @@ Global
 		{7EE13F51-A234-4EAA-B78C-7B6167FBC0B8}.Release|x64.Build.0 = Release|x64
 		{7EE13F51-A234-4EAA-B78C-7B6167FBC0B8}.Release|x86.ActiveCfg = Release|Win32
 		{7EE13F51-A234-4EAA-B78C-7B6167FBC0B8}.Release|x86.Build.0 = Release|Win32
+		{1DB769AB-D68D-4CBF-960B-71F51D8B61CA}.Debug|x64.ActiveCfg = Debug|x64
+		{1DB769AB-D68D-4CBF-960B-71F51D8B61CA}.Debug|x64.Build.0 = Debug|x64
+		{1DB769AB-D68D-4CBF-960B-71F51D8B61CA}.Debug|x86.ActiveCfg = Debug|Win32
+		{1DB769AB-D68D-4CBF-960B-71F51D8B61CA}.Debug|x86.Build.0 = Debug|Win32
+		{1DB769AB-D68D-4CBF-960B-71F51D8B61CA}.Release|x64.ActiveCfg = Release|x64
+		{1DB769AB-D68D-4CBF-960B-71F51D8B61CA}.Release|x64.Build.0 = Release|x64
+		{1DB769AB-D68D-4CBF-960B-71F51D8B61CA}.Release|x86.ActiveCfg = Release|Win32
+		{1DB769AB-D68D-4CBF-960B-71F51D8B61CA}.Release|x86.Build.0 = Release|Win32
+		{E41758DD-10A6-483C-905C-244EB145BA21}.Debug|x64.ActiveCfg = Debug|x64
+		{E41758DD-10A6-483C-905C-244EB145BA21}.Debug|x64.Build.0 = Debug|x64
+		{E41758DD-10A6-483C-905C-244EB145BA21}.Debug|x86.ActiveCfg = Debug|Win32
+		{E41758DD-10A6-483C-905C-244EB145BA21}.Debug|x86.Build.0 = Debug|Win32
+		{E41758DD-10A6-483C-905C-244EB145BA21}.Release|x64.ActiveCfg = Release|x64
+		{E41758DD-10A6-483C-905C-244EB145BA21}.Release|x64.Build.0 = Release|x64
+		{E41758DD-10A6-483C-905C-244EB145BA21}.Release|x86.ActiveCfg = Release|Win32
+		{E41758DD-10A6-483C-905C-244EB145BA21}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
