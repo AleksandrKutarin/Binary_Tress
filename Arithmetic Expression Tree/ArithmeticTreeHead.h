@@ -39,13 +39,13 @@ public:
 					s.pop();
 				}
 				else
-					throw logic_error("stack полон");
+					throw logic_error("stack пуст");
 				if (!s.empty()) {
 				node->left = s.top();
 				s.pop();
 				}
 				else
-					throw logic_error("stack полон");
+					throw logic_error("stack пуст");
 				s.push(node);
 			}
 		}
